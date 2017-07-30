@@ -1,0 +1,77 @@
+command /resethero:
+    description: Reset your hero
+    permission: kcocco.superheroes.player.resethero
+    trigger:
+        command "/pex user %player% group add tourist"
+        command "/pex user %player% remove joker"
+        command "/pex user %player% remove missmartian"
+        message "&8&l[&e&lDCCosmicsCraft&r &a> &dYour hero has been reset.&8&l]&r"
+
+command /joker:
+    description: Become the joker
+    permission: kcocco.superheroes.heroes.joker
+    trigger:
+        command "/pex user %player% group add joker"
+        message "&8&l[&e&lDCCosmicsCraft&r &a> &dYour hero has been set to the &5J&2o&rk&de&rr.&8&l]&r"
+        message "&4&l&nREMEMBER: DO /jokerkit TO RECEIVE YOUR KIT!"
+        broadcast "&8&l[&e&lDCCosmicsCraft&r &a> &d%player% &a has become the &5J&2o&rk&de&rr.&8&l]&r"
+
+command /jokerkit:
+    description: Become the joker
+    permission: kcocco.superheroes.kits.joker
+    trigger:
+        message "&8&l[&e&lDCCosmicsCraft&r&8&l]&r &e> &4%player% &r&b has become the &5J&2o&rk&de&rr"
+        command "/shot give %player% AK-47"
+        loop 10 times:
+            command "/shot give %player% C4"
+
+on join:
+        broadcast "&c&lHai %player% ^-^"
+
+command /missmartian:
+    description: Become Miss Martian!
+    permission: kcocco.superheroes.heroes.missmartian
+    trigger:
+        command "/pex user %player% group add missmartian"
+        message "&8&l[&e&lDCCosmicsCraft&r &a> &dYour hero has been set to &0[&2M&ri&2ss M&ra&2r&4t&2i&9a&2n&0]&r&8&l]&r"
+        message "&4&l&nREMEMBER: DO /missmartiankit TO RECEIVE YOUR KIT!"
+        broadcast "&8&l[&e&lDCCosmicsCraft&r&8&l]&r &e> &4%player% &r&b has become &2M&ri&2ss M&ra&2r&4t&2i&9a&2n&r&8&l]"
+
+command /listheroes:
+    description: List the heroes!
+    permission: kcocco.superheroes.listheroes
+    trigger:
+        message "&dHeroes &b> &5J&2o&rk&de&rr &d> &2/joker"
+        message "&dHeroes &b> &2M&ri&2ss M&ra&2r&4t&2i&9a&2n&0]&r&8&l &r&d> &2/missmartian"
+
+command /relationships:
+    description: List the relationships!
+    permission: kcocco.core.relationships
+    trigger:
+        loop 10 times:
+            message "&8|  ===== &4&lLove is in the air ❤-❤ &r&8=====  |"
+            message "&8===== &b&lPresident_Myth &c&l❤&4&l❤ &r&d&lHeyItzSug&r &8====="
+            message "&8===== &b&lKCocco &c&l❤&4&l❤ &r&d&l8px&r               &8====="
+
+command /clearchat:
+    description: Clear the chat
+    permission: kcocco.core.clearchat
+    trigger:
+        loop 100 times:
+            broadcast "&r"
+
+command /missmartiankit:
+    description: Miss Martian's kit
+    permission: kcocco.superheroes.kits.missmartian
+    trigger:
+        command "/effect %player% water_breathing 99999"
+        command "/effect %player% jump_boost 99999 4"
+        command "/effect %player% strength 99999 10" 
+        command "/effect resistance 99999 2" 
+        command "/effect %player% regeneration 99999 2"         
+        command "/effect %player% night_vision 99999"
+        command "/give %player% minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"
+        message "&8&l[&e&lDCCosmicsCraft&r &a> &dYour hero has been set to &0[&2M&ri&2ss M&ra&2r&4t&2i&9a&2n&0]&r&8&l]&r"
+        message "&4&l&nREMEMBER: DO /missmartiankit TO RECEIVE YOUR KIT!"
+        broadcast "&8&l[&e&lDCCosmicsCraft&r&8&l]&r &e> &4%player% &r&b has become &2M&ri&2ss M&ra&2r&4t&2i&9a&2n&r&8&l]"
+

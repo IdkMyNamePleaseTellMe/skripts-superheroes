@@ -1,0 +1,13 @@
+on chat:
+		replace all "KCocco" in message with "xCocoHoe"
+		replace all "sug" in message with "&c&l❤ &r&dSug&r &c&l❤&r&a"
+		replace all "Sug" in message with "&c&l❤ &r&dSug&r &c&l❤&r&a"
+		replace all "HeyItzSug" in message with "&c&l❤ &r&dSug&r &c&l❤&r&a"
+		replace all "autism" in message with "retardation"
+		replace all "thosey" in message with "&c&l❤ &r&dThosey&r &c&l❤&r&a"
+		replace all "Thosey" in message with "&c&l❤ &r&dThosey&r &c&l❤&r&a"
+		replace all "RqndomPqrson" in message with "&c&l❤ &r&dThosey&r &c&l❤&r&a"
+		replace all "Star" in message with "&dSTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR &b☺&r"
+		replace all "lucifer" in message with "&0&lE&5&lt&8&le&0&lr&7&ln&5&li&0&lt&7&ly&r"
+		replace all "luci" in message with "&0&lE&5&lt&8&le&0&lr&7&ln&5&li&0&lt&7&ly&r"
+		replace all "lucifer_S" in message with "&0&lE&5&lt&8&le&0&lr&7&ln&5&li&0&lt&7&ly&r"
